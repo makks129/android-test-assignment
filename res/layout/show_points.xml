@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TabHost
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabHost">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/tab_points_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_point_button"
+                    android:id="@+id/button"
+                    android:layout_weight="0"
+                    android:onClick="onClickAddPoint"
+                    android:singleLine="false"
+                    android:layout_margin="5dp"/>
+
+                <ListView
+                    android:id="@+id/points_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delete_all_points_button"
+                    android:id="@+id/delete_all_button"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0"
+                    android:onClick="onClickDeleteAllButton"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab_diagram"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <com.example.android_test_assignment.view.DiagramView
+                    android:id="@+id/diagram_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    />
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">M.Strelnikov App</string>
+    <string name="show_points_activity_name">Points</string>
+    <string name="edit_points_activity_name">Point details</string>
+    <string name="point_label">Point </string>
+    <string name="x_label">X:</string>
+    <string name="y_label">Y:</string>
+    <string name="save_point_button">Save point</string>
+    <string name="delete_point_button">Delete point</string>
+    <string name="add_point_button">Add point</string>
+    <string name="delete_all_points_button">Delete all points</string>
+    <string name="tab_tag_points">tag1</string>
+    <string name="tab_name_points">Points</string>
+    <string name="tab_tag_diagram">tag2</string>
+    <string name="tab_name_diagram">Diagram</string>
+    <string name="context_menu_item_delete_point">Delete point</string>
+    <string name="extras_key_row">listRow</string>
+    <string name="extras_key_point">point</string>
+    <string name="extras_key_diagram_width">diagramWidth</string>
+    <string name="extras_key_diagram_height">diagramHeight</string>
+    <string name="bundle_key_point">pointText</string>
+    <string name="bundle_key_x">xValue</string>
+    <string name="bundle_key_y">yValue</string>
+    <string name="notification_incorrect_values" formatted="false">Notification!
+        \n\nWe are sorry, but this is a simple application,
+        you can only have points that fit your actual diagram size in pixels (in your case it is %d by %d pixels).
+        \n\nSo for you the limits are:
+        \n%d &lt; X &lt; %d
+        \n%d &lt; Y &lt; %d
+        \n\nRelative diagram creation will be added in future versions of application :)</string>
+    <string name="toast_empty_values">Enter values for X and Y</string>
+
+</resources>
